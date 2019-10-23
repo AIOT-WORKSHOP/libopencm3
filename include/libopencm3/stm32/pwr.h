@@ -32,6 +32,8 @@
 #       include <libopencm3/stm32/f4/pwr.h>
 #elif defined(STM32F7)
 #       include <libopencm3/stm32/f7/pwr.h>
+#elif defined(STM32H7)
+#       include <libopencm3/stm32/h7/pwr.h>
 #elif defined(STM32L1)
 #       include <libopencm3/stm32/l1/pwr.h>
 #elif defined(STM32L0)

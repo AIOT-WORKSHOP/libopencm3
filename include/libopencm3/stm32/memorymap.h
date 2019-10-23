@@ -32,6 +32,8 @@
 #	include <libopencm3/stm32/f4/memorymap.h>
 #elif defined(STM32F7)
 #	include <libopencm3/stm32/f7/memorymap.h>
+#elif defined(STM32H7)
+#       include <libopencm3/stm32/h7/memorymap.h>
 #elif defined(STM32L0)
 #	include <libopencm3/stm32/l0/memorymap.h>
 #elif defined(STM32L1)

@@ -1,7 +1,20 @@
-/* This provides unification of code over STM32 subfamilies */
+/** @defgroup timer_defines Timer Defines
+
+@brief <b>libopencm3 Defined Constants and Types for the STM32F7xx Timers</b>
+
+@ingroup STM32F7xx_defines
+
+@version 1.0.0
+
+@author @htmlonly &copy; @endhtmlonly 2018 Karl Palsson <karlp@tweak.net.au>
+
+LGPL License Terms @ref lgpl_license
+*/
 
 /*
  * This file is part of the libopencm3 project.
+ *
+ * Copyright (C) 2018 Karl Palsson <karlp@tweak.net.au>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
@@ -17,23 +30,13 @@
  * along with this library.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <libopencm3/cm3/common.h>
-#include <libopencm3/stm32/memorymap.h>
+#ifndef LIBOPENCM3_TIMER_H
+#define LIBOPENCM3_TIMER_H
 
-#if defined(STM32F2)
-#       include <libopencm3/stm32/f2/rng.h>
-#elif defined(STM32F4)
-#       include <libopencm3/stm32/f4/rng.h>
-#elif defined(STM32F7)
-#       include <libopencm3/stm32/f7/rng.h>
-#elif defined(STM32H7)
-#       include <libopencm3/stm32/h7/rng.h>
-#elif defined(STM32L0)
-#       include <libopencm3/stm32/l0/rng.h>
-#elif defined(STM32L4)
-#       include <libopencm3/stm32/l4/rng.h>
-#elif defined(STM32G0)
-#       include <libopencm3/stm32/g0/rng.h>
-#else
-#       error "stm32 family not defined."
+#include <libopencm3/stm32/common/timer_common_all.h>
+
+BEGIN_DECLS
+
+END_DECLS
+
 #endif

@@ -21,6 +21,8 @@
 #       include <libopencm3/stm32/f4/dsi.h>
 #elif defined(STM32F7)
 #       include <libopencm3/stm32/f7/dsi.h>
+#elif defined(STM32H7)
+#       include <libopencm3/stm32/h7/dsi.h>
 #else
 #       error "dsi.h not available for this family."
 #endif
